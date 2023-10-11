@@ -1,0 +1,72 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Poppins&family=Roboto:wght@300;400;500&display=swap");
+
+body {
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+}
+
+.container {
+   background-color: aliceblue;
+   max-width: 60rem;
+   width: 100%;
+   margin: 5rem auto;
+}
+
+.slider {
+   display: flex;
+   align-items: center;
+   gap: 2.5rem;
+   scroll-snap-type: x mandatory;
+   overflow-x: scroll;
+   padding: 2rem;
+}
+
+.slider .card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 21rem;
+   padding: 2rem;
+   border-radius: 16px;
+   background-color: blanchedalmond;
+   text-align: center;
+   margin-left: 0;
+}
+
+.card .image {
+   padding: 5px;
+   background-color: black;
+   border-radius: 50%;
+}
+
+.image img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid white;
+}
+
+@media (max-width: 420px) {
+   .container {
+      background-color: yellow;
+      max-width: 21rem;
+      width: 100%;
+   }
+}
+
+@media (min-width: 390px) and (max-width: 820px) {
+   .container {
+      background-color: aliceblue;
+      max-width: 40rem;
+      width: 100%;
+      margin: 5rem auto;
+   }
+}
